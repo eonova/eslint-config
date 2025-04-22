@@ -9,7 +9,7 @@ export async function ignores(userIgnores: string[] = []): Promise<TypedFlatConf
         ...GLOB_EXCLUDE,
         ...userIgnores,
       ],
-      name: 'leostar: ignores',
+      name: 'eonova: ignores',
     },
   ]
 }

@@ -26,7 +26,7 @@ export async function jsonc(
 
   return [
     {
-      name: 'leostar: jsonc/setup',
+      name: 'eonova: jsonc/setup',
       plugins: {
         jsonc: pluginJsonc as any,
       },
@@ -36,7 +36,7 @@ export async function jsonc(
       languageOptions: {
         parser: parserJsonc,
       },
-      name: 'leostar: jsonc/rules',
+      name: 'eonova: jsonc/rules',
       rules: {
         'jsonc/no-bigint-literals': 'error',
         'jsonc/no-binary-expression': 'error',

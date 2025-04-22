@@ -35,14 +35,14 @@ export async function test(
 
   return [
     {
-      name: 'leostar: test/setup',
+      name: 'eonova: test/setup',
       plugins: {
         test: _pluginTest,
       },
     },
     {
       files,
-      name: 'leostar: test/rules',
+      name: 'eonova: test/rules',
       rules: {
         'test/consistent-test-it': ['error', { fn: 'it', withinDescribe: 'it' }],
         'test/no-identical-title': 'error',

@@ -91,7 +91,7 @@ export async function formatters(
 
   const configs: TypedFlatConfigItem[] = [
     {
-      name: 'leostar: formatter/setup',
+      name: 'eonova: formatter/setup',
       plugins: {
         format: pluginFormat,
       },
@@ -105,7 +105,7 @@ export async function formatters(
         languageOptions: {
           parser: parserPlain,
         },
-        name: 'leostar: formatter/css',
+        name: 'eonova: formatter/css',
         rules: {
           'format/prettier': [
             'error',
@@ -120,7 +120,7 @@ export async function formatters(
         languageOptions: {
           parser: parserPlain,
         },
-        name: 'leostar: formatter/scss',
+        name: 'eonova: formatter/scss',
         rules: {
           'format/prettier': [
             'error',
@@ -135,7 +135,7 @@ export async function formatters(
         languageOptions: {
           parser: parserPlain,
         },
-        name: 'leostar: formatter/less',
+        name: 'eonova: formatter/less',
         rules: {
           'format/prettier': [
             'error',
@@ -154,7 +154,7 @@ export async function formatters(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: formatter/html',
+      name: 'eonova: formatter/html',
       rules: {
         'format/prettier': [
           'error',
@@ -172,7 +172,7 @@ export async function formatters(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: formatter/xml',
+      name: 'eonova: formatter/xml',
       rules: {
         'format/prettier': [
           'error',
@@ -192,7 +192,7 @@ export async function formatters(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: formatter/svg',
+      name: 'eonova: formatter/svg',
       rules: {
         'format/prettier': [
           'error',
@@ -224,7 +224,7 @@ export async function formatters(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: formatter/markdown',
+      name: 'eonova: formatter/markdown',
       rules: {
         [`format/${formater}`]: [
           'error',
@@ -247,7 +247,7 @@ export async function formatters(
         languageOptions: {
           parser: parserPlain,
         },
-        name: 'leostar: formatter/slidev',
+        name: 'eonova: formatter/slidev',
         rules: {
           'format/prettier': [
             'error',
@@ -270,7 +270,7 @@ export async function formatters(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: formatter/astro',
+      name: 'eonova: formatter/astro',
       rules: {
         'format/prettier': [
           'error',
@@ -286,7 +286,7 @@ export async function formatters(
 
     configs.push({
       files: [GLOB_ASTRO, GLOB_ASTRO_TS],
-      name: 'leostar: formatter/astro/disables',
+      name: 'eonova: formatter/astro/disables',
       rules: {
         'style/arrow-parens': 'off',
         'style/block-spacing': 'off',
@@ -305,7 +305,7 @@ export async function formatters(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: formatter/graphql',
+      name: 'eonova: formatter/graphql',
       rules: {
         'format/prettier': [
           'error',

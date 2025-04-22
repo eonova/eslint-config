@@ -1,12 +1,12 @@
 {
-  "name": "@ileostar/eslint-config",
+  "name": "@eonova/eslint-config",
   "type": "module",
   "version": "0.3.1",
   "packageManager": "pnpm@10.4.1",
-  "description": "LeoStar's ESLint config",
-  "author": "LeoStar <hi@leostar.top> (https://github.com/ileostar/)",
+  "description": "Eonova's ESLint config",
+  "author": "Eonova <hi@eonova.top> (https://github.com/eonova/)",
   "license": "MIT",
-  "homepage": "https://github.com/ileostar/eslint-config",
+  "homepage": "https://github.com/eonova/eslint-config",
   "keywords": [
     "eslint-config"
   ],
@@ -33,6 +33,10 @@
     "test": "vitest",
     "typecheck": "tsc --noEmit",
     "prepare": "simple-git-hooks"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
     "@eslint-react/eslint-plugin": "^1.19.0",
@@ -130,9 +134,9 @@
   },
   "devDependencies": {
     "@antfu/ni": "^23.3.1",
+    "@eonova/eslint-config": "workspace:*",
     "@eslint-react/eslint-plugin": "^1.26.2",
     "@eslint/config-inspector": "^1.0.0",
-    "@ileostar/eslint-config": "workspace:*",
     "@prettier/plugin-xml": "^3.4.1",
     "@stylistic/eslint-plugin-migrate": "^4.0.0",
     "@types/fs-extra": "^11.0.4",

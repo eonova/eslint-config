@@ -5,7 +5,7 @@ import { pluginUnicorn } from '../plugins'
 export async function unicorn(options: OptionsUnicorn = {}): Promise<TypedFlatConfigItem[]> {
   return [
     {
-      name: 'leostar: unicorn/rules',
+      name: 'eonova: unicorn/rules',
       plugins: {
         unicorn: pluginUnicorn,
       },

@@ -1,4 +1,4 @@
-# @ileostar/eslint-config 使用指南
+# @eonova/eslint-config 使用指南
 
 本项目纯自用，感谢`antfu`大佬，代码forks自 [`antfu/eslint`](https://github.com/antfu/eslint-config)
 
@@ -9,7 +9,7 @@
 我们提供了一个 CLI 工具帮助初始化项目或迁移到新配置：
 
 ```bash
-pnpm dlx @ileostar/eslint-config@latest
+pnpm dlx @eonova/eslint-config@latest
 ```
 
 ### 手动安装
@@ -17,16 +17,16 @@ pnpm dlx @ileostar/eslint-config@latest
 如果手动设置：
 
 ```bash
-pnpm add -D eslint @ileostar/eslint-config
+pnpm add -D eslint @eonova/eslint-config
 ```
 
 并在项目根创建 `eslint.config.ts`：
 
 ```ts
 // eslint.config.ts
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar()
+export default eonova()
 ```
 
 <details>
@@ -35,13 +35,13 @@ export default leostar()
 使用 [`@eslint/eslintrc`](https://www.npmjs.com/package/@eslint/eslintrc`) 转换旧格式配置：
 
 ```js
-import { FlatCompat } from '@eslint/eslintrc'
 // eslint.config.ts
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
+import { FlatCompat } from '@eslint/eslintrc'
 
 const compat = new FlatCompat()
 
-export default leostar(
+export default eonova(
   {
     ignores: [],
   },
@@ -134,22 +134,22 @@ export default leostar(
 
 ### 基础配置
 
-导入 `leostar` 预设并导出配置：
+导入 `eonova` 预设并导出配置：
 
 ```js
 // eslint.config.ts
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar()
+export default eonova()
 ```
 
 ### 进阶配置示例
 
 ```js
 // eslint.config.ts
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar({
+export default eonova({
   type: 'lib',
   stylistic: {
     indent: 2,
@@ -173,7 +173,7 @@ import {
   javascript,
   typescript,
   vue
-} from '@ileostar/eslint-config'
+} from '@eonova/eslint-config'
 
 export default combine(
   javascript(),
@@ -187,9 +187,9 @@ export default combine(
 若需恢复原始插件前缀：
 
 ```ts
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar()
+export default eonova()
   .renamePlugins({
     ts: '@typescript-eslint',
     yaml: 'yml',
@@ -204,9 +204,9 @@ export default leostar()
 启用外部格式化器：
 
 ```js
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar({
+export default eonova({
   formatters: {
     css: true,
     html: true,
@@ -226,9 +226,9 @@ pnpm add -D eslint-plugin-format
 启用 React：
 
 ```js
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar({
+export default eonova({
   react: true
 })
 ```
@@ -244,9 +244,9 @@ pnpm add -D @eslint-react/eslint-plugin eslint-plugin-react-hooks eslint-plugin-
 启用 Svelte：
 
 ```js
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar({
+export default eonova({
   svelte: true
 })
 ```
@@ -265,9 +265,9 @@ pnpm add -D eslint-plugin-svelte
 
 ```js
 // eslint.config.ts
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar({
+export default eonova({
   files: ['**/*.vue'],
   rules: {
     'vue/operator-linebreak': ['error', 'before']
@@ -280,9 +280,9 @@ export default leostar({
 启用 TypeScript 类型检查：
 
 ```js
-import leostar from '@ileostar/eslint-config'
+import eonova from '@eonova/eslint-config'
 
-export default leostar({
+export default eonova({
   typescript: {
     tsconfigPath: 'tsconfig.json'
   }

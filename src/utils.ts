@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url'
 import { isPackageExists } from 'local-pkg'
 
 const scopeUrl = fileURLToPath(new URL('.', import.meta.url))
-const isCwdInScope = isPackageExists('@ileostar/eslint-config')
+const isCwdInScope = isPackageExists('@eonova/eslint-config')
 
 export const parserPlain = {
   meta: {
@@ -42,7 +42,7 @@ export async function combine(...configs: Awaitable<TypedFlatConfigItem | TypedF
  *
  * @example
  * ```ts
- * import { renameRules } from '@ileostar/eslint-config'
+ * import { renameRules } from '@eonova/eslint-config'
  *
  * export default [{
  *   rules: renameRules(
@@ -75,7 +75,7 @@ export function renameRules(
  *
  * @example
  * ```ts
- * import { renamePluginInConfigs } from '@ileostar/eslint-config'
+ * import { renamePluginInConfigs } from '@eonova/eslint-config'
  * import someConfigs from './some-configs'
  *
  * export default renamePluginInConfigs(someConfigs, {

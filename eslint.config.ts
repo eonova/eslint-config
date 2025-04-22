@@ -1,8 +1,8 @@
 import styleMigrate from '@stylistic/eslint-plugin-migrate'
 
-import leostar from './src'
+import eonova from './src'
 
-export default leostar(
+export default eonova(
   {
     vue: true,
     react: true,

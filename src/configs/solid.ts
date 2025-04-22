@@ -31,7 +31,7 @@ export async function solid(
 
   return [
     {
-      name: 'leostar: solid/setup',
+      name: 'eonova: solid/setup',
       plugins: {
         solid: pluginSolid,
       },
@@ -48,7 +48,7 @@ export async function solid(
         },
         sourceType: 'module',
       },
-      name: 'leostar: solid/rules',
+      name: 'eonova: solid/rules',
       rules: {
         // reactivity
         'solid/components-return-once': 'warn',

@@ -26,7 +26,7 @@ export async function toml(
 
   return [
     {
-      name: 'leostar: toml/setup',
+      name: 'eonova: toml/setup',
       plugins: {
         toml: pluginToml,
       },
@@ -36,7 +36,7 @@ export async function toml(
       languageOptions: {
         parser: parserToml,
       },
-      name: 'leostar: toml/rules',
+      name: 'eonova: toml/rules',
       rules: {
         'style/spaced-comment': 'off',
 

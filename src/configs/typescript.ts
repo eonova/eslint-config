@@ -93,14 +93,14 @@ export async function typescript(
           ...parserOptions as any,
         },
       },
-      name: `leostar: typescript/${typeAware ? 'type-aware-parser' : 'parser'}`,
+      name: `eonova: typescript/${typeAware ? 'type-aware-parser' : 'parser'}`,
     }
   }
 
   return [
     {
       // Install the plugins without globs, so they can be configured separately.
-      name: 'leostar: typescript/setup',
+      name: 'eonova: typescript/setup',
       plugins: {
         antfu: pluginAntfu,
         ts: pluginTs as any,
@@ -117,7 +117,7 @@ export async function typescript(
         ],
     {
       files,
-      name: 'leostar: typescript/rules',
+      name: 'eonova: typescript/rules',
       rules: {
         ...renameRules(
           pluginTs.configs['eslint-recommended'].overrides![0].rules!,
@@ -179,7 +179,7 @@ export async function typescript(
       ? [{
           files: filesTypeAware,
           ignores: ignoresTypeAware,
-          name: 'leostar: typescript/rules-type-aware',
+          name: 'eonova: typescript/rules-type-aware',
           rules: {
             ...typeAwareRules,
             ...overridesTypeAware,

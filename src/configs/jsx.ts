@@ -13,7 +13,7 @@ export async function jsx(): Promise<TypedFlatConfigItem[]> {
           },
         },
       },
-      name: 'leostar: jsx/setup',
+      name: 'eonova: jsx/setup',
     },
   ]
 }

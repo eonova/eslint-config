@@ -21,7 +21,7 @@ export async function regexp(
   return [
     {
       ...config,
-      name: 'leostar: regexp/rules',
+      name: 'eonova: regexp/rules',
       rules: {
         ...rules,
         ...options.overrides,

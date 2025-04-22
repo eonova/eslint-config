@@ -9,7 +9,7 @@ export async function imports(options: OptionsStylistic = {}): Promise<TypedFlat
 
   return [
     {
-      name: 'leostar: imports/rules',
+      name: 'eonova: imports/rules',
       plugins: {
         antfu: pluginAntfu,
         import: pluginImport,

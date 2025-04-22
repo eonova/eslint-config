@@ -41,7 +41,7 @@ export async function stylistic(
 
   return [
     {
-      name: 'leostar: stylistic/rules',
+      name: 'eonova: stylistic/rules',
       plugins: {
         antfu: pluginAntfu,
         style: pluginStylistic,

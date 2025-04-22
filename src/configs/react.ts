@@ -70,7 +70,7 @@ export async function react(
 
   return [
     {
-      name: 'leostar: react/setup',
+      name: 'eonova: react/setup',
       plugins: {
         'react': plugins['@eslint-react'],
         'react-dom': plugins['@eslint-react/dom'],
@@ -91,7 +91,7 @@ export async function react(
         },
         sourceType: 'module',
       },
-      name: 'leostar: react/rules',
+      name: 'eonova: react/rules',
       rules: {
         // recommended rules from @eslint-react/dom
         'react-dom/no-children-in-void-dom-elements': 'warn',
@@ -202,7 +202,7 @@ export async function react(
       ? [{
           files: filesTypeAware,
           ignores: ignoresTypeAware,
-          name: 'leostar: react/type-aware-rules',
+          name: 'eonova: react/type-aware-rules',
           rules: {
             ...typeAwareRules,
           },

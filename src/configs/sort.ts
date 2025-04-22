@@ -9,7 +9,7 @@ export async function sortPackageJson(): Promise<TypedFlatConfigItem[]> {
   return [
     {
       files: ['**/package.json'],
-      name: 'leostar: sort/package-json',
+      name: 'eonova: sort/package-json',
       rules: {
         'jsonc/sort-array-values': [
           'error',
@@ -117,7 +117,7 @@ export function sortTsconfig(): TypedFlatConfigItem[] {
   return [
     {
       files: ['**/tsconfig.json', '**/tsconfig.*.json'],
-      name: 'leostar: sort/tsconfig-json',
+      name: 'eonova: sort/tsconfig-json',
       rules: {
         'jsonc/sort-keys': [
           'error',

@@ -27,7 +27,7 @@ export async function yaml(
 
   return [
     {
-      name: 'leostar: yaml/setup',
+      name: 'eonova: yaml/setup',
       plugins: {
         yaml: pluginYaml,
       },
@@ -37,7 +37,7 @@ export async function yaml(
       languageOptions: {
         parser: parserYaml,
       },
-      name: 'leostar: yaml/rules',
+      name: 'eonova: yaml/rules',
       rules: {
         'style/spaced-comment': 'off',
 

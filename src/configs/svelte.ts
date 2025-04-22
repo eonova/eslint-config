@@ -31,7 +31,7 @@ export async function svelte(
 
   return [
     {
-      name: 'leostar: svelte/setup',
+      name: 'eonova: svelte/setup',
       plugins: {
         svelte: pluginSvelte,
       },
@@ -47,7 +47,7 @@ export async function svelte(
             : null,
         },
       },
-      name: 'leostar: svelte/rules',
+      name: 'eonova: svelte/rules',
       processor: pluginSvelte.processors['.svelte'],
       rules: {
         'import/no-mutable-exports': 'off',

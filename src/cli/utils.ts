@@ -15,7 +15,7 @@ export function getEslintConfigContent(
   additionalConfigs?: string[],
 ): string {
   return `
-import antfu from '@ileostar/eslint-config'
+import antfu from '@eonova/eslint-config'
 
 export default antfu({
 ${mainConfig}

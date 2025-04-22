@@ -61,7 +61,7 @@ export async function vue(
           watchEffect: 'readonly',
         },
       },
-      name: 'leostar: vue/setup',
+      name: 'eonova: vue/setup',
       plugins: {
         vue: pluginVue,
       },
@@ -81,7 +81,7 @@ export async function vue(
           sourceType: 'module',
         },
       },
-      name: 'leostar: vue/rules',
+      name: 'eonova: vue/rules',
       processor: sfcBlocks === false
         ? pluginVue.processors['.vue']
         : mergeProcessors([

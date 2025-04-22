@@ -36,10 +36,10 @@ export async function javascript(
       linterOptions: {
         reportUnusedDisableDirectives: true,
       },
-      name: 'leostar: javascript/setup',
+      name: 'eonova: javascript/setup',
     },
     {
-      name: 'leostar: javascript/rules',
+      name: 'eonova: javascript/rules',
       plugins: {
         'antfu': pluginAntfu,
         'unused-imports': pluginUnusedImports,

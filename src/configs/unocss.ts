@@ -22,7 +22,7 @@ export async function unocss(
 
   return [
     {
-      name: 'leostar: unocss',
+      name: 'eonova: unocss',
       plugins: {
         unocss: pluginUnoCSS,
       },

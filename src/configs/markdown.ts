@@ -18,7 +18,7 @@ export async function markdown(
 
   return [
     {
-      name: 'leostar: markdown/setup',
+      name: 'eonova: markdown/setup',
       plugins: {
         markdown,
       },
@@ -26,7 +26,7 @@ export async function markdown(
     {
       files,
       ignores: [GLOB_MARKDOWN_IN_MARKDOWN],
-      name: 'leostar: markdown/processor',
+      name: 'eonova: markdown/processor',
       // `eslint-plugin-markdown` only creates virtual files for code blocks,
       // but not the markdown file itself. We use `eslint-merge-processors` to
       // add a pass-through processor for the markdown file itself.
@@ -40,7 +40,7 @@ export async function markdown(
       languageOptions: {
         parser: parserPlain,
       },
-      name: 'leostar: markdown/parser',
+      name: 'eonova: markdown/parser',
     },
     {
       files: [
@@ -54,7 +54,7 @@ export async function markdown(
           },
         },
       },
-      name: 'leostar: markdown/disables',
+      name: 'eonova: markdown/disables',
       rules: {
         'antfu/no-top-level-await': 'off',
 
